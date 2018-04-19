@@ -1,12 +1,12 @@
 function initMap() {
-	var uluru = {lat:5.359952, lng: -4.008256};
-	var map = new google.maps.Map(document.getElementById('location'), {
+	var abidjan = {lat:5.359952, lng: -4.008256};
+	var location = new google.maps.Map(document.getElementById('location'), {
 		zoom: 6,
-		center: uluru
+		center: abidjan
 	});
 	var marker = new google.maps.Marker({
-		position: uluru,
-		map: map
+		position: abidjan,
+		map: location
 	});
 }
 
