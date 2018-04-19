@@ -1,0 +1,139 @@
+body{
+  background-image:url(img/background.jpg);
+  font-family:"Gorgia";
+  font-size:20px;
+  margin: 0;
+  padding: 0;
+ }
+h1{
+  font-family: Impact;
+}	
+h4{
+  font-family: Helvetica;
+  font-style: italic;	
+}
+.navigation {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.navigation ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: steelblue; 
+  text-align: center;
+  }
+
+.navigation li {  
+  margin-right:10px;
+  color: white;
+  line-height: 40px;
+  height: 40px;
+  display: inline-block;
+}
+	  
+.navigation a:hover {
+  background-color: gray;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: white;
+  }
+.text{
+  margin: 2.5% 7.5%;
+  width:22.5%;
+  float: left;
+}
+.image{
+  float: left;
+  width:62.5%;
+  margin: 2% 0;
+}
+.title{
+  float: left;
+}
+
+section#welcome{
+  padding:0;
+  margin:0;
+  overflow: auto;
+  background:#DAF7A6;
+  text-align: center;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#contact {
+  margin : 2.5% 0 0 0 ;
+  text-align:center;
+}
+
+#left1 {
+  margin: 0 2.5% 2.5%;
+  width:45%;
+  float: left;
+}
+#right1 {
+  float: left;
+  width:45%;
+  margin: 0 2.5% 2.5%;
+}
+
+#left2 {
+  margin: 0 2.5%;
+  width:45%;
+  float: left;
+}
+#right2 {
+  float: left;
+  width:45%;
+  margin: 0 2.5%;
+}
+#left3 {
+  margin: 0 2.5%;
+  width:40%;
+  float: left;
+}
+#right3 {
+  float: left;
+  width:40%;
+  margin: 0 2.5%;
+}
+
+#title2 {
+  width: 45%;
+  margin: 2.5% 2.5%;
+  float: left;
+}
+
+#title1 {
+  width: 100%;
+  margin: 2.5% 0;
+  text-align : center;
+}
+
+.block {
+  width : 95%;
+  margin : 2.5% 2.5%;
+}
+
+#soccer{
+  margin: 2.5% 2.5%;
+  width: 45%;
+  float: left;
+}
+#skiing {
+  margin: 2.5% 2.5%;
+  width: 45%;
+  float: left;
+}
+#music {
+	margin:2.5% 2.5%;
+	float: left;
+	width=45%;
+}
+
+	
