@@ -1,19 +1,16 @@
-function initMap() {
-	var abidjan = {lat:5.359952, lng: -4.008256};
-	var location = new google.maps.Map(document.getElementById('location'), {
-		zoom: 6,
-		center: abidjan
-	});
+ var map;
+      function initMap() {
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 5.359952, lng: -4.008256},
+          zoom: 6
+        });
+		
 	var marker = new google.maps.Marker({
-		position: abidjan,
-		map: location
-	});
-}
+    position: {lat: 5.359952, lng: -4.008256},
+    map: map,
+    title: 'Hello Abidjan!',
 
-$(document).ready(function(){
-    $('.slide').bxSlider({
-      mode: 'fade',
-      captions: true,
-      slideWidth: 600
-    });
-  });
+
+	draggable: true
+         });
+	}

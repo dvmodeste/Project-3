@@ -5,8 +5,17 @@
     <title>ITMD 361 Project2</title>
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<script src="js/location.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFsXMqQIUr0b-9po3z9xp4deEQ1CWTgr0&callback=initMap"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdhWVhiMVAJ6aKpJwvW5D9OlwWTeg7iIE&callback=initMap"
+    async defer></script>
+    <script src="js/location.js"></script>
+    
+
+    <style>
+      #map {
+        height: 500px;
+      }
+</style>
+
 	</head>
 <body>
     <header>
@@ -38,12 +47,44 @@
 	  <div class="image">
       <img src="img/roadmap.jpg" alt="Roadmap">
 	  </div>
-	  <div id="location">
-      </div>
+	  
+    
 	<div id="contact">
-	 <h2>Contact</h2>
-     <p>vdogo@hawk.iit.edu</p>
+	 <h2>Cote d'Ivoire</h2>
+     <p>Country of nice beaches</p>
 	</div>
+	<div id="wrapper">
+	<div id="map"></div>
+
+<h2>My Slideshow</h2>
+
+  <img class="mySlides" src="img/beaches.jpg" style="width:40%">
+  <img class="mySlides" src="img/ivory_coast.jpg" style="width:40%">
+
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</div>
 	
 </body>
 </html>
